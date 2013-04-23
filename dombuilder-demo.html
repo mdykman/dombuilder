@@ -1,0 +1,26 @@
+<html>
+<head>
+
+	<script src="jquery-1.8.2.min.js"> </script>
+	<script src="dombuilder.js"> </script>
+<script>
+	$(function() {
+		$("#area").html(buildDom(
+				[ "table", {border:1 },[
+					[ "tr" , [
+						[ "td" ,"thing one"],
+						[ "td" ,"thing two"]
+					]],
+					[ "tr" , [
+						[ "td" ,{colspan:2,align:'center'},"centre text"]
+					]]
+				]]
+		));
+	});
+</script>
+<head>
+<body>
+ <div id="area">
+ </div>
+</body>
+</html>
